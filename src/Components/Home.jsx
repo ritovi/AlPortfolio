@@ -1,4 +1,6 @@
-import Carousel from "./Carousel";
+import Carousel from "../Utils/Carousel";
+import TypeWriter from "../Utils/TypeWriter";
+
 
 import arreglo from "../Utils/images.json";
 import { useState } from "react";
@@ -33,7 +35,11 @@ const Home = () => {
           <h2 className="text-4xl xl:text-5xl py-2 text-teal-600 font-extrabold">
             Jose Alberto
           </h2>
-          <h3 className={`text-xl xl:text-2xl py-2 font-bold ${mood ? "text-gray-400" : "text-black"}`}>Programmer and Developer</h3>
+          <div className={`text-xl xl:text-2xl py-2 font-bold ${mood ? "text-gray-400" : "text-black"}`}>
+          <TypeWriter ></TypeWriter>
+          </div>
+          
+          
 
           <p className={`text-lg xl:text-xl py-7 leading-8 text-left  sm:w-3/4 md:w-3/4 xl:w-3/5 2xl:w-full 2xl:text-center lg:w-3/4 m-auto ${mood ? "text-gray-400" : "text-black"}`}>
             Computer Science Student providing services for programming and
@@ -197,6 +203,28 @@ const Home = () => {
 
         </div>
       </div>
+
+      <footer className={`${mood ? "bg-black/35 " : "bg-teal-800"} text-white py-6`}>
+        <div className="max-w-6xl mx-auto px-4 flex items-center justify-between">
+
+          <p className="text-sm">&copy; 2025 Jose Alberto. All Rights Reserved.</p>
+
+
+          <div className="flex space-x-4">
+
+            <a href="https://github.com/ritovi" target="_blank" rel="noopener noreferrer">
+              <img src="gitblue.svg" alt="GitHub" className="h-7 w-7" />
+            </a>
+
+            <a href="https://www.linkedin.com/in/jose-rivera-a2157a1a6/" target="_blank" rel="noopener noreferrer">
+              <img src="linkedin.svg" alt="LinkedIn" className="h-7 w-7" />
+            </a>
+
+
+          </div>
+        </div>
+      </footer>
+
 
     </div>
   );

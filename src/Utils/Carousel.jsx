@@ -20,12 +20,12 @@ const Carousel = (props) => {
       <div className="absolute inset-0 flex items-center justify-between p-2">
         <button
           onClick={prev}
-          className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
+          className="rounded-full shadow text-gray-800 hover:bg-black"
         >
-          <BiChevronLeft size={20} />
+        <img className="w-10 "  src="left.svg" alt="leftArrow"/>
         </button>
-        <button onClick={next} className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white">
-          <BiChevronRight size={20} />
+        <button onClick={next} className="rounded-full shadow-lg text-gray-800 hover:bg-black">
+          <img className="w-10" src="right.svg" alt="rightArrow" />
         </button>
       </div>
 

@@ -1,6 +1,5 @@
 
 import { useState } from "react";
-import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 
 const Carousel = (props) => {
   const [curr, setCurr] = useState(0);

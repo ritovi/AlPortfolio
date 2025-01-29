@@ -66,7 +66,7 @@ const Home = () => {
 
 
             <div className="flex justify-center pb-3  ">
-              <div className="w-4/5 text-4xl grid grid-cols-3 gap-y-7 gap-x-20 text-gray-600  py-10 ">
+              <div className="w-4/5 text-4xl grid grid-cols-3 gap-y-7 gap-x-12 lg:gap-x-20 text-gray-600  py-10 ">
                 <div className="flex items-center justify-center animate-bounce">
                   <img src="linux.svg" alt="Linux" />
                 </div>

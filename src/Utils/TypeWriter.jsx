@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const TypeWriter = () => {
-  const words = ["Hello, World!", "Welcome to my website!", "I am a  Passionate Programmer", "I am a Frontend Developer", "I am a Backend Developer", "I am a Arch User", "I am a Computer Science Student",];
+  const words = ["Hello, World!", "Welcome to my website!", "I am a  Passionate Programmer", "I am a Frontend Developer", "I am a Backend Developer", "I am a Computer Science Student",];
   const [text, setText] = useState(""); // Holds the text to display
   const [i, setI] = useState(0); // Index of the current word
   const [j, setJ] = useState(0); // Character index within the current word
